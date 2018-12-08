@@ -11,10 +11,13 @@ namespace EnumeratorExmple
         static void Main(string[] args)
         {
             Cars cars = new Cars();
-            foreach (Car item in cars)
-            {
-                Console.WriteLine(item.Company+" "+item.Year);
-            }
+
+            Console.WriteLine(cars.GetEnumerator());
+            //foreach (Car item in cars)
+            //{
+               
+            //    Console.WriteLine(item.Company+" "+item.Year);
+            //}
         }
     }
 }
